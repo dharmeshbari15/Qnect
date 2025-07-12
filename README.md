@@ -1,39 +1,83 @@
- 📘 StackIt – Minimal Q&A Platform
+-----
 
-StackIt is a lightweight, community-powered question-and-answer platform built for structured knowledge sharing and collaborative learning. Inspired by Stack Overflow, it focuses on simplicity, speed, and clarity — ideal for communities, classrooms, or niche groups.
+# StackIt – A Minimal Q\&A Forum Platform
 
-🚀 Features
+## Overview
 
-👤 User Roles:
-- **Guest**: View questions and answers
-- **User**: Register, log in, post questions and answers, vote, and tag
-- **Admin**: Moderate content (questions/answers/tags)
+StackIt is a minimal question-and-answer platform that supports collaborative learning and structured knowledge sharing. It’s designed to be simple, user-friendly, and focused on the core experience of asking and answering questions within a community.
 
-🧠 Core Functionalities:
-- Ask questions with rich text editor
-- Post answers to any question
-- Upvote or downvote answers
-- Mark a selected answer as "Accepted"
-- Tag-based categorization and search
-- Notifications for mentions, answers, and replies
-- Clean, responsive UI
+## User Roles
 
+| Role | Permissions |
+|---|---|
+| Guest | View all questions and answers |
+| User | Register, log in, post questions/answers, vote |
+| Admin | Moderate content |
 
-🧱 Tech Stack
+## Core Features (Must-Have)
 
-- **Frontend**: React.js, Tailwind CSS, React Router, Quill.js
-- **Backend**: Node.js, Express.js, MongoDB with Mongoose
-- **Authentication**: JWT-based user authentication
-- **Rich Editor**: React Quill (Markdown optional fallback)
-- **Extras**: ESLint + Prettier for code formatting
+### 1\. Ask Question
 
----
+Users can submit a new question using:
 
-## 🧑‍🤝‍🧑 Team Members
+  * **Title** – Short and descriptive
+  * **Description** – Written using a rich text editor
+  * **Tags** – Multi-select input (e.g., React, JWT)
 
-| Name                 | Role                     | Email                           |
-|----------------------|--------------------------|----------------------------------|
-| Harshit Chouhan      | Team Lead / Fullstack Dev| harshit.chouhan.bhinmal@gmail.com |
-| Dharmesh Bari        | Backend Developer        | dharmeshbari15@gmail.com         |
-| Jatin Nagar          | Frontend Developer       | rishabhnaagar01@gmail.com        |
-| Jai Bhagwan Chouhan  | UI/UX & QA Tester        | luckychouhan1204@gmail.com       |
+### 2\. Rich Text Editor Features
+
+The description editor should support:
+
+  * Bold, Italic, Strikethrough
+  * Numbered lists, Bullet points
+  * Emoji insertion
+  * Hyperlink insertion (URL)
+  * Image upload
+  * Text alignment – Left, Center, Right
+
+### 3\. Answering Questions
+
+  * Users can post answers to any question
+  * Answers can be formatted using the same rich text editor
+  * Only logged-in users can post answers
+
+### 4\. Voting & Accepting Answers
+
+  * Users can upvote or downvote answers
+  * Question owners can mark one answer as accepted
+
+### 5\. Tagging
+
+  * Questions must include relevant tags
+
+### 6\. Notification System
+
+  * A notification icon (bell) appears in the top navigation bar
+  * Users are notified when:
+      * Someone answers their question
+      * Someone comments on their answer
+      * Someone mentions them using @username
+  * The icon shows the number of unread notifications
+  * Clicking the icon opens a dropdown with recent notifications
+
+## Admin Role
+
+  * Reject inappropriate or spammy skill descriptions.
+  * Ban users who violate platform policies.
+  * Monitor pending, accepted, or cancelled swaps.
+  * Send platform-wide messages (e.g., feature updates, downtime alerts).
+  * Download reports of user activity, feedback logs, and swap stats.
+
+## Mockups
+
+  * [Question Submission Mockup](https://link.excalidraw.com/l/65VNwvy7c4X/8bM86GXnnUN)
+  * [Notification System Mockup](https://www.google.com/search?q=https://link.excalidraw.com/l/65VNwvy7c4X/9mhEahV0MQg)
+
+-----
+
+## Team Members
+
+  * **Harshit Chouhan** (Team Leader) - harshit.chouhan.bhinmal@gmail.com
+  * **Dharmesh Bari** - dharmeshbari15@gmail.com
+  * **Jatin Nagar** - rishabhnaagar01@gmail.com
+  * **Jai Bhagwan Singh Chouhan** - luckychouhan1204@gmail.com
